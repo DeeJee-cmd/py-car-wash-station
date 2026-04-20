@@ -4,7 +4,6 @@ class Car:
         self.clean_mark = clean_mark
         self.brand = brand
 
-
 class CarWashStation:
     def __init__(self, distance_from_city_center, clean_power, average_rating, count_of_ratings):
         self.distance_from_city_center = distance_from_city_center
@@ -34,4 +33,3 @@ class CarWashStation:
         updated_total_rating = self.average_rating * self.count_of_ratings + rate
         self.count_of_ratings += 1
         self.average_rating = round(updated_total_rating / self.count_of_ratings, 1)
-
